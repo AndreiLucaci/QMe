@@ -3,7 +3,7 @@ using QMe.Business.Controllers;
 
 namespace QMe.Business.Forms
 {
-	public class FormController : Form
+	public abstract class FormController : Form
 	{
 		protected Controller Controller;
 
