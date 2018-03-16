@@ -1,12 +1,21 @@
-﻿using Unity;
+﻿using QMe.Templating.Controllers;
+using Unity;
+using Unity.Injection;
 
 namespace QMe.Templating.Unity
 {
-	public class UnityConfiguration
+	public static class UnityConfiguration
 	{
-		public static void RegisterTypes(IUnityContainer container)
+		public static void RegisterTypes(this IUnityContainer container)
 		{
-			container.RegisterType<TemplateManager>();
+			container.ConfigureWithViews();
+			container.ConfigureWithControllers();
+
+			container.RegisterType<TemplateManager>(
+				new InjectionConstructor(
+					container.Resolve<AddNewTemplateController>()
+				)
+			);
 		}
 	}
 }

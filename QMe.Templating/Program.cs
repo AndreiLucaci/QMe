@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using QMe.Templating.Unity;
 using Unity;
@@ -18,14 +15,21 @@ namespace QMe.Templating
 		{
 			var container = CreateContainer();
 
-			UnityConfiguration.RegisterTypes(container);
+			container.RegisterTypes();
 
+			var template = container.Resolve<TemplateManager>();
 			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(container.Resolve<TemplateManager>());
+			//Application.SetCompatibleTextRenderingDefault(false);
+
+			Run(template);
 		}
 
-		static IUnityContainer CreateContainer()
+		public static void Run(Form template)
+		{
+			Application.Run(template);
+		}
+
+		public static IUnityContainer CreateContainer()
 		{
 			return new UnityContainer();
 		}

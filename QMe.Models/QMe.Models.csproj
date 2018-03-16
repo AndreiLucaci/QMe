@@ -58,6 +58,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Styles\DefaultStyle.cs" />
     <Compile Include="Styles\IStyle.cs" />
+    <Compile Include="Templates\TemplateAnswer.cs" />
+    <Compile Include="Templates\TemplateModel.cs" />
+    <Compile Include="Templates\TemplateQuestion.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
