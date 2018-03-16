@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Drawing.Text;
 using Xceed.Words.NET;
 
 namespace QMe.Business.POC
 {
     public class POCSampleDocumentProcessor
     {
-        public POCSampleDocumentProcessor()
-        {
-            
-        }
-
         public DocX CreatePOCDocument()
         {
             // Adjust the path so suit your machine:
