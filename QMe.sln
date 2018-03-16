@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMe.Tests", "QMe.Tests\QMe.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMe.Sample", "QMe.Sample\QMe.Sample.csproj", "{4D6F1C39-655F-47D3-B501-05F1E432F82D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMe.Templating", "QMe.Templating\QMe.Templating.csproj", "{1AED5AF9-575D-471A-90CC-137D5490020D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4D6F1C39-655F-47D3-B501-05F1E432F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D6F1C39-655F-47D3-B501-05F1E432F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D6F1C39-655F-47D3-B501-05F1E432F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AED5AF9-575D-471A-90CC-137D5490020D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AED5AF9-575D-471A-90CC-137D5490020D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AED5AF9-575D-471A-90CC-137D5490020D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AED5AF9-575D-471A-90CC-137D5490020D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
